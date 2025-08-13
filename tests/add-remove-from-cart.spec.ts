@@ -13,7 +13,7 @@ test('add-remove-from-cart', async ({ page }) => {
   //Add Backpack to cart from products page
   await page.locator('[data-test="add-to-cart-sauce-labs-backpack"]').click();
 
-  //Remove Backpack from cart and cofirm action button set pack to "Add to Cart"
+  //Remove Backpack from cart and cofirm action button set back to "Add to Cart"
   await page.locator('[data-test="remove-sauce-labs-backpack"]').click();
   await expect(page.locator('[data-test="add-to-cart-sauce-labs-backpack"]')).toBeVisible();
 });
