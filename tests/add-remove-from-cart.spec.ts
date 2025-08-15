@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('add-remove-from-cart', async ({ page }) => {
+test('Add and remove a single item to the cart from the products page', async ({ page }) => {
 
   //Login
   await page.goto('https://www.saucedemo.com/');
